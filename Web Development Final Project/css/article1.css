@@ -1,0 +1,421 @@
+/* Remove space at the side of screen */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* Navigation bar */
+#home {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  background-color: black;
+  color: white;
+  padding: 15px 20px 5px;
+}
+
+#logo {
+  padding: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.dropbtn {
+  background-color: black;
+  border: black;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  ;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  display: block;
+  padding: 10px 10px 0px 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Cancelling out boostrap  */
+*, ::after, ::before {
+  box-sizing: content-box;
+}
+
+#searchbar {
+  padding-bottom: 4px;
+}
+
+form {
+  width: 220px;
+  display: inline-block;
+  float: right;
+  background-color: black;
+}
+
+.form {
+  background-color: black;
+  padding: 10px 0px;
+  height: 40px;
+}
+
+/* article-contents */
+#heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#author {
+  text-align: center;
+  font-size: 17px;
+}
+
+#product {
+  font-size: 18px;
+}
+
+/* box details */
+.box-image {
+  float: left;
+  margin-right: 10px;
+}
+
+.box-info {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 20px 0px;
+  height: 154px;
+}
+
+/* Box information */
+.info {
+  font-size: 10px;
+}
+
+/* Other articles */
+/* Article 2 */
+.container2 {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+#nsa-text {
+  position: absolute;
+  top: 320px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#tag2 {
+  width: 35px;
+  position: absolute;
+  top: 270px;
+  left: 15px;
+}
+
+/* Article 3 */
+.container3 {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+#projector-text {
+  position: absolute;
+  top: 320px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#tag3 {
+  width: 55px;
+  position: absolute;
+  top: 270px;
+  left: 15px;
+}
+
+/* Article 4 */
+.container4 {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+#laptop-text {
+  position: absolute;
+  top: 325px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 25px;
+}
+
+#tag4 {
+  width: 67px;
+  position: absolute;
+  top: 270px;
+  left: 15px;
+}
+
+/* Article 5 */
+.container5 {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+#usb-text {
+  position: absolute;
+  top: 325px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#tag5 {
+  width: 55px;
+  position: absolute;
+  top: 270px;
+  left: 15px;
+}
+
+#row1, #row2 {
+  position: relative;
+  left: 7px;
+}
+
+/* General tags, image and text properties */
+.tags {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  border-radius: 5px;
+  color: white;
+}
+
+.images {
+  margin: 5px;
+}
+
+.secondary-text {
+  font-size: 15px;
+}
+
+.container2, .container3, .container4, .container5 {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* social media tags */
+.socialmedia, .socialmedia:hover {
+  grid-area: socialmedia;
+  text-decoration: none;
+  position: relative;
+  top: 7px;
+}
+
+#facebook {
+  padding: 10px 22px;
+}
+
+#twitter {
+  padding: 10px 31px;
+}
+
+/* Grid for article contents and social media tags */
+.grid-container-index {
+  display: grid;
+  grid-template-columns: 200px 77%;
+  grid-template-areas: "socialmedia body"
+    "comment-heading comments";
+  padding: 0px 0px 0px 5px;
+}
+
+.body {
+  grid-area: body;
+}
+
+/* Videos and images */
+.media {
+  width: 100%;
+}
+
+/* Grid for comments section */
+.comments-heading {
+  grid-area: comment-heading;
+}
+
+.comments {
+  grid-area: comments;
+}
+
+/* New comments */
+#newComment {
+  width: 1135px;
+  height: 100px;
+}
+
+#allComments div {
+  background-color: #e0e0e0;
+  padding: 10px 0px;
+  border: 1px solid black;
+  margin: 5px 5px 5px 0px;
+  width: 1140px;
+}
+
+/* Extra small devices (phones, 419px and down) */
+@media only screen and (max-width: 419px) {
+
+  /* Reduce font-size of nav bar */
+  li {
+    font-size: 11.5px;
+  }
+
+  /* Box information */
+  .box-info {
+    height: 160px;
+  }
+
+  .info {
+    font-size: 9px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* Text and tags of links to other articles */
+  #headline-text, #nsa-text, #projector-text, #laptop-text, #usb-text {
+    font-size: 12px;
+  }
+
+  #nsa-text {
+    top: 335px;
+  }
+
+  #tag2 {
+    top: 290px;
+  }
+
+  #tag4 {
+    width: 71px;
+  }
+}
+
+/* Extra small devices,small devices and medium devices (phones, 992px and down) */
+@media only screen and (max-width: 992px) {
+
+  /* Navigation bar */
+  #logo {
+    display: none;
+  }
+
+  #home {
+    display: block;
+  }
+
+  li {
+    padding: 10px 8px;
+  }
+
+  .dropbtn {
+    padding: 0px;
+  }
+
+  form {
+    display: block;
+    width: 100%;
+  }
+
+  /* Main article image */
+  #chrome {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Remove grid and social media tags */
+  .grid-container-index {
+    display: block;
+  }
+
+  .socialmedia {
+    display: none;
+  }
+
+  /* Images and videos */
+  .media {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Footer */
+  footer {
+    height: 200px;
+    font-size: 10px;
+  }
+}
+
+/* For screen sizes between medium and large */
+@media only screen and (max-width: 1470.4px) {
+
+  /* Adjust images to fit width of screen */
+  .images {
+    display: block;
+    width: 97.5%
+  }
+
+  /* Remove flexbox */
+  .row {
+    display: block;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  height: 175px;
+}
+
+.footer-details {
+  box-sizing: border-box;
+  margin: 10px;
+  color: white;
+  display: inline;
+  position: relative;
+  left: 15px;
+}
+
+#copyright {
+  position: relative;
+  left: 15px;
+  top: 10px;
+}

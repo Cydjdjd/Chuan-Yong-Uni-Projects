@@ -1,0 +1,479 @@
+/* Remove space at the side of screen */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* Navigation bar */
+#home {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+}
+
+#logo {
+  padding: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.dropbtn {
+  background-color: black;
+  border: black;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  ;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  display: block;
+  padding: 10px 10px 0px 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#searchbar {
+  padding-bottom: 4px;
+}
+
+form {
+  width: 220px;
+  display: inline-block;
+  float: right;
+  background-color: black;
+}
+
+.form {
+  background-color: black;
+  padding: 10px 0px;
+  height: 40px;
+}
+
+header {
+  background-color: black;
+}
+
+/* Override bootstrap  */
+*, ::after, ::before {
+  box-sizing: content-box;
+}
+
+/* General tags, image and text properties */
+.tags {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  border-radius: 5px;
+}
+
+.images {
+  margin: 5px;
+}
+
+.secondary-text {
+  font-size: 25px;
+}
+
+.container2, .container3, .container4, .container5 {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Headline photo and text */
+#article1 {
+  position: relative;
+  top: 40px;
+}
+
+.container1 {
+  position: relative;
+  color: white;
+  transition: top 1s, display 1s;
+}
+
+#headline-text {
+  position: absolute;
+  top: 640px;
+  left: 5px;
+  font-size: 40px;
+}
+
+#tag1 {
+  position: absolute;
+  top: 600px;
+  left: 5px;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  top: 580px;
+  left: 5px;
+  background-color: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 0px;
+  z-index: 1;
+}
+
+/* Secondary news article photo, text and dropdown */
+/* Adjusting position for Javascript animation */
+#article2 {
+  position: relative;
+  top: 40px;
+}
+
+#article3 {
+  position: relative;
+  top: 40px;
+}
+
+#article4 {
+  position: relative;
+  top: 40px;
+}
+
+#article5 {
+  position: relative;
+  top: 40px;
+}
+
+/* Article 2 */
+.container2 {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+#nsa-text {
+  position: absolute;
+  top: 320px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#tag2 {
+  width: 35px;
+  position: absolute;
+  top: 270px;
+  left: 15px;
+}
+
+#dropdown-content2 {
+  display: none;
+  position: absolute;
+  top: 265px;
+  left: 15px;
+  background-color: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 0px;
+  z-index: 1;
+}
+
+/* Article 3 */
+.container3 {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+#projector-text {
+  position: absolute;
+  top: 320px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#tag3 {
+  width: 55px;
+  position: absolute;
+  top: 270px;
+  left: 15px;
+}
+
+#dropdown-content3 {
+  display: none;
+  position: absolute;
+  top: 265px;
+  left: 15px;
+  background-color: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 0px;
+  z-index: 1;
+}
+
+/* Article 4 */
+.container4 {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+#laptop-text {
+  position: absolute;
+  top: 300px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 25px;
+}
+
+#tag4 {
+  width: 67px;
+  position: absolute;
+  top: 245px;
+  left: 15px;
+}
+
+#dropdown-content4 {
+  display: none;
+  position: absolute;
+  top: 265px;
+  left: 15px;
+  background-color: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 0px;
+  z-index: 1;
+}
+
+/* Article 5 */
+.container5 {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+#usb-text {
+  position: absolute;
+  top: 315px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#tag5 {
+  width: 55px;
+  position: absolute;
+  top: 270px;
+  left: 15px;
+}
+
+#dropdown-content5 {
+  display: none;
+  position: absolute;
+  top: 265px;
+  left: 15px;
+  background-color: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 0px;
+  z-index: 1;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  height: 175px;
+}
+
+.footer-details {
+  box-sizing: border-box;
+  margin: 10px;
+  color: white;
+  display: inline;
+  position: relative;
+  left: 15px;
+}
+
+#copyright {
+  position: relative;
+  left: 15px;
+  top: 10px;
+}
+
+/* Extra small devices (phones, 419px and down) */
+@media only screen and (max-width: 419px) {
+  li {
+    font-size: 11.5px;
+  }
+
+  #tag4 {
+    width: 71px;
+  }
+}
+
+/* Extra small devices,small devices and medium devices (phones, 992px and down) */
+@media only screen and (max-width: 1220px) {
+
+  /* Navigation bar */
+  #logo {
+    display: none;
+  }
+
+  #home {
+    display: block;
+  }
+
+  li {
+    padding: 10px 8px;
+  }
+
+  .dropbtn {
+    padding: 0px;
+  }
+
+  form {
+    display: block;
+    width: 100%;
+  }
+
+  /* Remove Javascript animation */
+  #article1, #article2, #article3, #article4, #article5 {
+    top: 0px;
+  }
+
+  /* Remove grid */
+  #row1, #row2 {
+    display: block;
+  }
+
+  /* Article Images */
+  #chrome, #nsa, #projector, #laptop, #usb {
+    width: 100%;
+    height: 300px;
+    padding: 2px 0px;
+    margin: 0px;
+  }
+
+  #chrome {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  /* Article text and tags */
+  #headline-text, #nsa-text, #projector-text, #laptop-text, #usb-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* Adjust tags and text for smaller screens */
+  #headline-text {
+    top: 300px;
+  }
+
+  #nsa-text {
+    top: 280px;
+  }
+
+  #projector-text {
+    top: 280px
+  }
+
+  #laptop-text {
+    top: 280px;
+  }
+
+  #usb-text {
+    top: 280px;
+  }
+
+  #tag1 {
+    top: 250px;
+  }
+
+  #tag2 {
+    top: 235px
+  }
+
+  #tag3 {
+    top: 230px;
+  }
+
+  #tag4 {
+    top: 230px;
+  }
+
+  #tag5 {
+    top: 230px;
+  }
+
+  /* Adjust footer for smaller screens */
+  footer {
+    height: 200px;
+    font-size: 10px;
+  }
+}
+
+/* Adjust laptop text when it turns from 2 lines to 1 line */
+@media only screen and (min-width: 623px) {
+  #laptop-text {
+    top: 280px;
+  }
+
+  #tag4 {
+    top: 230px;
+  }
+}
+
+/* Between Large and Extra large devices (large laptops and desktops, above 992px and below 1220px) */
+@media only screen and (min-width: 1220px) and (max-width:1520px) {
+
+  /* Main article, text and tag */
+  #chrome {
+    width: 100%
+  }
+
+  #headline-text {
+    font-size: 35px;
+  }
+
+  #dropdown-content {
+    font-size: 15px;
+  }
+
+  #dropdown-content2, #dropdown-content3, #dropdown-content4, #dropdown-content5 {
+    font-size: 13.75px;
+  }
+
+  /* Other articles */
+  #nsa, #projector, #laptop, #usb {
+    width: 97%;
+  }
+}

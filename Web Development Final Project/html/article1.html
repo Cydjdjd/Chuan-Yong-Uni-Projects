@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>Meet Chrome OS Flex, Google's new weapon for desktop domination</title>
+  <!-- Meta information -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Article 1-News">
+  <meta name="keywords" content="Technology,News,Articles">
+  <meta name="author" content="Foo Chuan Yong">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS stylesheets and JS file links  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/article1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script id="address-template" type="text/x-handlebars-template">
+    <p id="author">By {{author}} on {{date}}, {{time}}</p>
+</script>
+
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header>
+    <ul>
+      <li id="logo"><a href="../index.html"><img src="../images/logo.jpg" alt="Techadvisor logo" width="140" height="54" /></a></li>
+      <li id="home"><a href="../index.html"><img src="../images/home.jpg" alt="Techadvisor logo" width="30" height="24" /></a></li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">News
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../html/article1.html">News1</a>
+            <a href="../html/article2.html">News2</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../html/article3.html">Reviews</a></li>
+      <li><a href="../html/article4.html">Best Buys</a></li>
+      <li id="how-to"><a href="../html/article5.html">How to</a></li>
+      <li><a href="../html/report.html">Report</a></li>
+    </ul>
+    <!-- Searchbar -->
+    <div class="form">
+      <form autocomplete="off" class="navbar-form navbar-left" action="/action_page.php">
+        <div class="input-group">
+          <input list="browsers" type="text" id="input1" value="" class="form-control" placeholder="Search" name="search" required />
+          <!-- Autocomplete -->
+          <datalist id="browsers">
+            <option value="Home">
+            <option value="News1">
+            <option value="News2">
+            <option value="Reviews">
+            <option value="Best Buys">
+            <option value="How To">
+            <option value="Report">
+          </datalist>
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit" onclick="submitinputs()">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </header>
+  <!-- Main image -->
+  <img class="media" id="chrome" src="../images/chrome.jpg" alt="Chrome OS Flex" width="1520" height="700" />
+  <!-- Main heading and author details -->
+  <h1 id="heading">Meet Chrome OS Flex, Google's new weapon for desktop domination</h1>
+  <div id="content-placeholder"></div>
+  <div class="grid-container-index">
+    <!-- Social media tags -->
+    <div class="socialmedia">
+      <a id="facebook" class="socialmedia tags" href="https://www.facebook.com/TechAdvisorHQ/">Facebook</a><br><br>
+      <a id="instagram" class="socialmedia tags" href="https://www.instagram.com/techadvisorhq/">Instagram</a><br><br>
+      <a id="twitter" class="socialmedia tags" href="https://twitter.com/techadvisorhq">Twitter</a>
+    </div>
+    <div class="body">
+      <!-- Text 1 -->
+      <p>Google's Chrome OS platform has come a ridiculously long way in an incredibly short time.
+        <br><br>
+        Back when it launched in 2010, Chrome OS truly was just a browser in a box — a dead-simple operating system designed to act as a portal to the web and not much more. The software had no desktop, no task bar, and barely even anything in the
+        way of settings. It was essentially just a full-screen browser window — and that's it.
+        <br><br>
+        Fast-forward to 2022, and Chrome OS is a fully featured and impressively polished computing solution. Between the platform's ongoing expansion and the rapid evolution in how we all use computers, Chromebooks are now a genuinely practical and
+        often advantageous option for business, personal, and education-related use.
+        <br><br>
+        The trick now for Google, particularly on the business front, is getting companies to give up the Windows habit and actually give Chrome OS a try.
+        <br><br>
+        Part of that challenge is closing the gaps with how some companies still approach computing. Plain and simple, while Chrome OS might be able to handle 95% of a typical organization's needs, lots of places still rely on legacy programs that
+        operate only in the Windows environment. So a little over a year ago, Google came up with a way to handle that and offer enterprises the ability to run Windows apps within Chrome OS with virtually no ongoing effort.
+        <br><br>
+        But the other part of the challenge is simply the fact that making a leap to the whole other platform is a daunting and also costly change — especially when most companies have stockpiles of still-functioning old Windows systems sitting
+        around and collecting dust.
+        <br><br>
+        That's exactly where a new effort called Chrome OS Flex comes into play. Chrome OS Flex is a wild new program that makes it almost laughably easy to convert any old Windows or Mac system into a fully functioning Chrome OS device — one that's
+        updated every four weeks, just like a regular Chromebook, and always as secure as can be.
+        <br><br>
+        The craziest part of all? The software and everything around it is completely free and available for anyone — businesses, schools, and even individuals — to use.
+      </p>
+      <!-- Video -->
+      <object class="media" data="../videos/chrome-os.mp4" width="1150" height="647"></object>
+      <!-- Text 2 -->
+      <h1>The Chrome OS Flex muscle</h1>
+      <p>If you've been reading this column and following the Chrome OS ecosystem for long, the concept behind Chrome OS Flex might sound familiar. And it should.
+        <br><br>
+        Chrome OS Flex is essentially an evolution of a third-party software setup called CloudReady. CloudReady used Google's open-source Chromium code to create a Chrome-OS-like environment that could be applied to any old computer and then updated
+        regularly via CloudReady's own ongoing efforts.
+        <br><br>
+        It was a brilliant setup, but as an unofficial, non-Google-associated project, it came with some inevitable limitations. CloudReady couldn't play video from Netflix or certain other streaming services without fairly complex workarounds, for
+        instance. Some Google services, such as Drive and Maps, didn't always work as expected in the CloudReady environment. The exceptionally effective Powerwash system for resetting a Chrome OS device wasn't available within CloudReady at all. And
+        standard Google features like Google Assistant, which has become a core part of the Chromebook productivity package, were missing entirely on CloudReady-converted computers.
+        <br><br>
+        In December of 2020, though, Google bought the company behind CloudReady. Chrome OS Flex is the result of that purchase — a freshly Googleized version of the CloudReady concept, now featuring native integration with the rest of the Google
+        ecosystem and with most of those old asterisks stripped away.
+        <br><br>
+        And starting today, anyone can download the new software, load it onto a USB drive, and have it up and running on any old Windows or Mac system in a matter of minutes.
+        <br><br>
+        "You get this [opportunity] to refresh your PCs and Macs with our fast and secure operating system," says Thomas Riedl, Google's director of enterprise and education products. "At the same time, you also get an opportunity to try new hardware
+        that fits your needs."
+        <br><br>
+        Chrome OS Flex gives you almost all the benefits of a full-fledged Chromebook, in other words, without any of the associated costs or commitments. All you need is a Windows or Mac system and about five minutes to make the transition and give
+        your existing device a whole new life.
+        <br><br>
+        And it's one that'll be immediately recognizable to anyone who's ever used a Chromebook.
+      </p>
+      <h1>Chrome OS Flex vs. the standard Chromebook experience</h1>
+      <p>What's most fascinating about Chrome OS Flex, even more than its CloudReady predecessor, is how impossibly similar the experience is to the standard Chrome OS setup on the surface. At first glance in particular, most folks probably wouldn't
+        notice any difference.
+        <br><br>
+        Even the most observant Chromebook aficionados among us would be hard-pressed to tell that apart from what you see on a native Chrome-OS-running Chromebook device.
+        <br><br>
+        Chrome OS Flex gets updated at the same cadence as the standard Chrome OS software, too, and any devices running Chrome OS Flex can be managed right alongside regular Chromebooks in the Google Workspace Admin tool.
+        <br><br>
+        "There are so many great benefits to effectively leverage a huge Windows fleet and bring it into the Chrome OS family without having to go through new hardware purchases first," Riedl says.
+        <br><br>
+        So what's the catch? Believe it or not, there really isn't one. From Google's perspective, anyone using Chrome OS Flex is clearly becoming more engaged with the overall Google ecosystem and all of the services around it. And while the
+        software itself may be free, companies and schools are likely to continue investing in both Workspace and future Chromebook devices for the all-in-one managed experience Chrome OS Flex is a part of.
+        <br><br>
+        That being said, for all of its similarities, a converted Chrome OS Flex computer will lack some of the benefits you get with a full-fledged Chrome OS system. Foundationally, it isn't possible for a converted device to have the same
+        end-to-end security model an actual Chromebook can provide, when the processor and verified hardware are all part of the single same package.
+        <br><br>
+        Beyond that, Chrome OS Flex computers won't currently be able to access the Google Play Store and enjoy the Android apps on Chrome OS advantage. That's something Google suggested could change eventually but wasn't possible in this current
+        early version of the effort (which, by the way, is technically still in an "early access" state).
+        The aforementioned Windows-app compatibility setup also won't be available within the Chrome OS Flex environment, which might be a good thing — as we'd be facing some dizzying M.C. Escher-esque moments if we converted Windows computers to
+        Chrome OS and then ran Windows within 'em (potentially even with Chrome running within the Windows window inside of the Chrome OS operating on the former Windows computer — yeesh! My head hurts).
+        <br><br>
+        But the core Chrome OS Flex experience genuinely is free and widely available, and updates for converted devices will continue more or less indefinitely — so long as the associated hardware is able to support it. (Officially, Chrome OS Flex
+        will have a "certified device list" with dates for how long full support is guaranteed — just like CloudReady did — but you can install the software on any computer you want, even if it isn't on that list, and then continue to get updates
+        without any real cutoff. Google just can't guarantee full compatibility outside of the devices and dates on that list.)
+        <br><br>
+        As for anyone who was already using CloudReady, once Chrome OS Flex moves out of its current testing phase and into a fully stable state, all existing customers will receive an over-the-air update that'll seamlessly shift them from the most
+        recent CloudReady build to the latest Chrome OS Flex equivalent — a transition that was carefully planned to ensure "nobody feels punished or disincentivized," as former CloudReady product director Forrest Smith, who's now working as a Google
+        product manager on the Chrome OS team, told me.
+        <br><br>
+        The other million-dollar question in my mind is if/when the same simple transition could work on existing Chromebooks as well. After all, a full-fledged Chromebook has a set amount of time in which it receives ongoing operating system updates
+        — and while that window of support has been extended considerably in recent years, it still puts a firm end date on a Chrome OS device's lifespan and the time in which it's advisable to use.
+        <br><br>
+        CloudReady never supported that possibility, as the fully integrated nature of official Chromebook hardware made it difficult to override the default operating system and ensure full compatibility. Now that the software is an official part of
+        Google, though, that could one day change — maybe.
+        <br><br>
+        As of now, Chrome OS Flex doesn't officially support installation on existing Chromebooks — only Windows and Mac computers. But broadly speaking, Smith tells me he thinks they can "shoot a lot higher on broad, solid hardware compatibility" as
+        time goes on. And he and Riedl both emphasized that this is very early days for the program and that things will only grow from here.
+        <br><br>
+        In other words, time will tell. But the ambitions here are high, and pretty much anything's possible.
+      </p>
+      <!-- Image -->
+      <img class="media" src="../images/chromebook.jpg" alt="chromebook" width="1150" height="647">
+      <h1>The bigger Chrome OS picture</h1>
+      <p>So that's the practical side of this. From a bigger-picture perspective, though, the implications of Chrome OS Flex are enormous.
+        <br><br>
+        When Google first acquired CloudReady back at the end of 2020, I wrote that the company had "quietly set the stage for a Chrome OS explosion." Go, go, gadget time-machine:
+        <br><br>
+        The very definition of what a Chromebook is could expand exponentially. Instead of a Chromebook being a computer created and sold explicitly to run Chrome OS, a Chromebook could essentially become any computer on which Chrome OS is installed.
+        Converting an old Windows or Mac system into a Chromebook ... should be almost the same as buying a new computer with Chrome OS, practically speaking.
+        <br><br>
+        And that means people — and perhaps most critically, companies — could take an abandoned old Windows or Mac computer out of storage and turn it into a fully functional, official-update-receiving Chromebook, with minimal cost, ample
+        advantages, and few to no asterisks attached.
+        <br><br>
+        Fourteen months later, and here we are. That's exactly what's happening.
+        <br><br>
+        Make no mistake about it: This is a massive leap forward for Chrome OS and its ability to invade the desktop computing domain — especially in the enterprise and education realms, where simple streamlined management is essential and dusty old
+        computers are aplenty.
+        <br><br>
+        Big things are most certainly a-brewin' here in the land of Googley matters. And what we're seeing now could seriously shift the state of desktop computing — again.
+      </p>
+      <!-- Author  and product details -->
+      <p id="products">Products in article:</p>
+      <div class="box-info">
+        <img class="box-image" src="../images/chrome-os-flex.jpg" alt="Chrome Os Flex" width="150" height="150" />
+        <h1 class="box-heading">Chrome OS flex</h1>
+        <p class="info">Platforms: Older Windows and Mac Computers</p>
+        <p class="info">Release Date: Second Quarter of 2022</p>
+      </div>
+      <div class="box-info">
+        <img class="box-image" src="../images/solomon-milo.jpg" alt="Journalist1" width="150" height="150" />
+        <h1>Solomon Milo</h1>
+        <p class="info">Senior Journalist</p>
+        <p class="info">Solomon Milo is a senior journalist who is an expert for our Techadvisor newsletter and magazine department. He specialises in writing technological news, often focusing on important news articles, some even making our
+          headline articles.</p>
+      </div>
+      <!-- Additional articles -->
+      <div id="row1" class="row">
+        <div id="article2" class="container2 col" onclick="article2()">
+          <img id="nsa" class="images" src="../images/nsa.jpg" alt="nsa spies" width="560" height="350" />
+          <p id="nsa-text" class="secondary-text">Meet the NSA spies shaping the future</p>
+          <p id="tag2" class="tags">News</p>
+        </div>
+        <div id="article3" class="container3 col" onclick="article3()">
+          <img id="projector" class="images" src="../images/projector.jpg" alt="Samsung projector" width="560" height="350" />
+          <p id="projector-text" class="secondary-text">Samsung The Freestyle projector (2022) review</p>
+          <p id="tag3" class="tags">Reviews</p>
+        </div>
+      </div>
+      <div id="row2" class="row">
+        <div id="article4" class="container4 col" onclick="article4()">
+          <img id="laptop" class="images" src="../images/laptop.jpg" alt="Example laptop" width="560" height="350" />
+          <p id="laptop-text" class="secondary-text">The best laptops: Premium laptops, budget laptops, 2-in-1s, and more</p>
+          <p id="tag4" class="tags">Best Buys</p>
+        </div>
+        <div id="article5" class="container5 col" onclick="article5()">
+          <img id="usb" class="images" src="../images/usb.jpg" alt="Usb attack" width="560" height="350" />
+          <p id="usb-text" class="secondary-text">Don't Plug It In! How to Prevent a USB Attack</p>
+          <p id="tag5" class="tags">How to</p>
+        </div>
+      </div>
+    </div>
+    <!-- Comments section -->
+    <div class="comment-heading">
+      <h5>Comments</h5>
+    </div>
+    <div class="comments">
+      <div id="allComments"></div>
+      <textarea id="newComment"></textarea><br>
+      <button id="addComments">Add Comment</button>
+
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <img id="logo2" src="../images/logo.jpg" alt="Techadvisor logo" width="200" height="70" /><br>
+    <p class="footer-details">About Us</p>
+    <p class="footer-details">Contact</p>
+    <p class="footer-details">Privacy Policy</p>
+    <p class="footer-details">Cookie Policy</p>
+    <p class="footer-details">Advertising</p>
+    <br>
+    <img id="copyright" src="../images/idg.jpg" alt="IDG Copyright" width="300" height="50" />
+
+  </footer>
+  <script src="../js/article1.js"></script>
+</body>
+
+</html>

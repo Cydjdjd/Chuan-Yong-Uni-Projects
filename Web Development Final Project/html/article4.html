@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>Tech Advisor From IDG</title>
+  <!-- Meta information -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Technological News Worldwide">
+  <meta name="keywords" content="Technology,News,Articles">
+  <meta name="author" content="Foo Chuan Yong">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS stylesheet and JS file links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/article4.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script id="address-template" type="text/x-handlebars-template">
+    <p id="author">By {{author}} on {{date}}, {{time}}</p>
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header>
+    <ul>
+      <li id="logo"><a href="../index.html"><img src="../images/logo.jpg" alt="Techadvisor logo" width="140" height="54" /></a></li>
+      <li id="home"><a href="../index.html"><img src="../images/home.jpg" alt="Techadvisor logo" width="30" height="24" /></a></li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">News
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../html/article1.html">News1</a>
+            <a href="../html/article2.html">News2</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../html/article3.html">Reviews</a></li>
+      <li><a href="../html/article4.html">Best Buys</a></li>
+      <li id="how-to"><a href="../html/article5.html">How to</a></li>
+      <li><a href="../html/report.html">Report</a></li>
+    </ul>
+    <!-- Searchbar -->
+    <div class="form">
+      <form autocomplete="off" class="navbar-form navbar-left" action="/action_page.php">
+        <div class="input-group">
+          <input list="browsers" type="text" id="input1" value="" class="form-control" placeholder="Search" name="search" required />
+          <!-- Autocomplete -->
+          <datalist id="browsers">
+            <option value="Home">
+            <option value="News1">
+            <option value="News2">
+            <option value="Reviews">
+            <option value="Best Buys">
+            <option value="How To">
+            <option value="Report">
+          </datalist>
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit" onclick="submitinputs()">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </header>
+  <!-- Main image -->
+  <img class="media" id="laptop" src="../images/laptop.jpg" alt="laptop" width="1520" height="700" />
+  <!-- Heading -->
+  <h1 id="heading">The best laptops: Premium laptops, budget laptops, 2-in-1s, and more</h1>
+  <div id="content-placeholder"></div>
+  <div class="grid-container-index">
+    <!-- Social media tags -->
+    <div class="socialmedia">
+      <a id="facebook" class="socialmedia tags" href="https://www.facebook.com/TechAdvisorHQ/">Facebook</a><br><br>
+      <a id="instagram" class="socialmedia tags" href="https://www.instagram.com/techadvisorhq/">Instagram</a><br><br>
+      <a id="twitter" class="socialmedia tags" href="https://twitter.com/techadvisorhq">Twitter</a>
+    </div>
+    <div class="body">
+      <!-- Text 1 -->
+      <p>Are you in the market for a brand spanking new laptop? If so, you’ve come to the right place. We curated a list of the best laptops available today. From traditional clamshells to swanky 2-in1’s, we’ve got something for everyone. If you’re
+        working with an inflexible budget, don’t sweat it, we’ve included Chromebooks and a few other affordable options. Every single one of these laptops has been tested and personally vetted by the crew at PCWorld as well.</p>
+      <br><br>
+      <p>Read on for our picks for the best laptops around. Now that Intel’s new 12th-gen Core laptops are here and kicking butt, with AMD’s fresh Ryzen 6000 laptop CPUs slated for release sooner than later, expect to see refreshes of the most
+        popular
+        models coming fast and furious over the next few months! If you’re looking to save some cash on your purchase, we’ve also got a roundup of the best laptop deals, updated every weekday. The top-tier stunners you’ll find below don’t grace it
+        very
+        often, but we relentlessly focus on good laptops that are actually good deals too.</p>
+      <br><br>
+      <p>Without further ado, these are the best laptops we’ve tested.</p>
+      <!-- Laptops information -->
+      <div id="div1">
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop1.jpg" alt="laptop1" width="150" height="150" />
+          <h1 class="model">Asus ROG Strix G15 Advantage Edition – Best gaming laptop on a budget</h1>
+          <p class="info">Price: $1649.99 at Best Buy | $1649.99 at Best Buy</p>
+        </div>
+
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop2.jpg" alt="laptop2" width="150" height="150" />
+          <h1 class="model">Pixelbook Go – Best Chromebook</h1>
+          <p class="info">Price: $649 at Google </p>
+        </div>
+
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop3.jpg" alt="laptop3" width="150" height="150" />
+          <h1 class="model">Lenovo ThinkPad X1 Carbon Gen 9 – Best productivity laptop</h1>
+          <p class="info">Price:$1,874.99 at Amazon</p>
+        </div>
+      </div>
+      <div id="div2">
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop4.jpg" alt="laptop4" width="150" height="150" />
+          <h1 class="model">Acer Aspire 5 (A514-54G-74SM) 14" i7-1165G7 16GB RAM 512GB SSD Laptop - Blue</h1>
+          <p class="info">Price: S$1,398</p>
+        </div>
+
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop5.jpg" alt="laptop5" width="150" height="150" />
+          <h1 class="model">Asus E510 (N5030, 8GB/512GB, Windows 10) 15.6-inch Laptop - Star Black (E510MA-EJ630T)</h1>
+          <p class="info">Price: S$749 </p>
+        </div>
+
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop6.jpg" alt="laptop6" width="150" height="150" />
+          <h1 class="model">Asus ZenBook 14 (R7, 16GB/512GB, Windows 10) 14-inch Laptop - Light Grey (UM425UG-AM005T)</h1>
+          <p class="info">Price:S$1,649</p>
+        </div>
+      </div>
+      <div id="div3">
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop7.jpg" alt="laptop7" width="150" height="150" />
+          <h1 class="model">Asus Vivobook Flip 14 (i5, 16GB/512GB, Windows 10) 14-inch Laptop - Indie Black (TP470EA-EC217T)</h1>
+          <p class="info">Price: S$1,398</p>
+        </div>
+
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop8.jpg" alt="laptop8" width="150" height="150" />
+          <h1 class="model">Asus ZenBook Flip 13 (i7, Iris Xe Graphics, 16GB/1TB, Windows 10) 13-inch Laptop (UX363EA-HP578T)</h1>
+          <p class="info">S$2,098 </p>
+        </div>
+
+        <div class="box-info">
+          <img class="box-image" src="../images/laptop9.jpg" alt="laptop9" width="150" height="150" />
+          <h1 class="model">Asus ExpertBook B9 (i7, Iris Xe Graphics, 16GB/1TB, Windows 10) 14-inch Laptop (B9400CEA-KC0756R)</h1>
+          <p class="info">S$2,698</p>
+        </div>
+      </div>
+      <!-- Load more,Load less buttons -->
+      <div id="Btns">
+        <button onclick="loadMore()" class="myBtn tags" id="myBtn">Load more</button>
+        <button onclick="loadLess()" class="myBtn tags" id="myBtn2">Load less</button>
+      </div>
+      <!-- Author information -->
+      <div class="box-info">
+        <img class="box-image" src="../images/journalist3.jpg" alt="Journalist3" width="150" height="150" />
+        <h1 class="model" id="box-heading">Lindsey Aurora</h1>
+        <p class="info">Senior Executive Journalist </p>
+        <p class="info">Lindsey Aurora is an avid follower of technology, making her a great and reliable Journalist for techadvisor. She has been working at the company for 15 years and her news articles still continue to amaze. </p>
+      </div>
+      <!-- Other articles -->
+      <div id="row1" class="row">
+        <div id="article1" class="container1 col" onclick="article1()">
+          <img id="chrome" class="images" src="../images/chrome.jpg" alt="Chrome OS Flex" width="560" height="350" />
+          <p id="headline-text" class="secondary-text">Meet Chrome OS Flex, Google's new weapon for desktop domination</p>
+          <p id="tag1" class="tags headline">News</p>
+        </div>
+        <div id="article2" class="container2 col" onclick="article2()">
+          <img id="nsa" class="images" src="../images/nsa.jpg" alt="NSA spies" width="560" height="350" />
+          <p id="nsa-text" class="secondary-text">Meet the NSA spies shaping the future</p>
+          <p id="tag2" class="tags">News</p>
+        </div>
+      </div>
+      <div id="row2" class="row">
+        <div id="article3" class="container3 col" onclick="article3()">
+          <img id="projector" class="images" src="../images/projector.jpg" alt="Samsung projector" width="560" height="350" />
+          <p id="projector-text" class="secondary-text">Samsung The Freestyle projector (2022) review</p>
+          <p id="tag3" class="tags">Reviews</p>
+        </div>
+        <div id="article5" class="container5 col" onclick="article5()">
+          <img id="usb" class="images" src="../images/usb.jpg" alt="Usb attack" width="560" height="350" />
+          <p id="usb-text" class="secondary-text">Don't Plug It In! How to Prevent a USB Attack</p>
+          <p id="tag5" class="tags">How to</p>
+        </div>
+      </div>
+    </div>
+    <!-- Comment section -->
+    <div class="comment-heading">
+      <h5>Comments</h5>
+    </div>
+    <div class="comments">
+      <div id="allComments"></div>
+      <textarea id="newComment"></textarea><br>
+      <button id="addComments">Add Comment</button>
+    </div>
+
+  </div>
+  <!-- Footer -->
+  <footer>
+    <img id="logo2" src="../images/logo.jpg" alt="Techadvisor logo" width="200" height="70" /><br>
+    <p class="footer-details">About Us</p>
+    <p class="footer-details">Contact</p>
+    <p class="footer-details">Privacy Policy</p>
+    <p class="footer-details">Cookie Policy</p>
+    <p class="footer-details">Advertising</p>
+    <br>
+    <img id="copyright" src="../images/idg.jpg" alt="IDG Copyright" width="300" height="50" />
+  </footer>
+  <script src="../js/article4.js"></script>
+</body>
+
+</html>

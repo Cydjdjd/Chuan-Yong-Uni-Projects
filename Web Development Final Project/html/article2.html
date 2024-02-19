@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>Tech Advisor From IDG</title>
+  <!-- Meta information -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Technological News Worldwide">
+  <meta name="keywords" content="Technology,News,Articles">
+  <meta name="author" content="Foo Chuan Yong">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS stylesheet and JS file links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/article2.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script id="address-template" type="text/x-handlebars-template">
+    <p id="author">By {{author}} on {{date}}, {{time}}</p>
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header>
+    <ul>
+      <li id="logo"><a href="../index.html"><img src="../images/logo.jpg" alt="Techadvisor logo" width="140" height="54" /></a></li>
+      <li id="home"><a href="../index.html"><img src="../images/home.jpg" alt="Techadvisor logo" width="30" height="24" /></a></li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">News
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../html/article1.html">News1</a>
+            <a href="../html/article2.html">News2</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../html/article3.html">Reviews</a></li>
+      <li><a href="../html/article4.html">Best Buys</a></li>
+      <li id="how-to"><a href="../html/article5.html">How to</a></li>
+      <li><a href="../html/report.html">Report</a></li>
+    </ul>
+    <!-- Searchbar -->
+    <div class="form">
+      <form autocomplete="off" class="navbar-form navbar-left" action="/action_page.php">
+        <div class="input-group">
+          <input list="browsers" type="text" id="input1" value="" class="form-control" placeholder="Search" name="search" required />
+          <!-- Autocomplete -->
+          <datalist id="browsers">
+            <option value="Home">
+            <option value="News1">
+            <option value="News2">
+            <option value="Reviews">
+            <option value="Best Buys">
+            <option value="How To">
+            <option value="Report">
+          </datalist>
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit" onclick="submitinputs()">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </header>
+  <!-- Main images -->
+  <img id="nsa1" src="../images/nsa.jpg" alt="NSA spies" width="1056" height="600" />
+  <img id="nsa2" src="../images/nsa2.jpg" alt="NSA logo" width="422" height="295" />
+  <img id="nsa3" src="../images/nsa3.jpg" alt="Gil Herrera" width="422" height="295" />
+  <h1 id="heading">Meet the NSA spies shaping the future</h1>
+  <div id="content-placeholder"></div>
+  <div class="grid-container-index">
+    <!-- Social media tags -->
+    <div class="socialmedia">
+      <a id="facebook" class="socialmedia tags" href="https://www.facebook.com/TechAdvisorHQ/">Facebook</a><br><br>
+      <a id="instagram" class="socialmedia tags" href="https://www.instagram.com/techadvisorhq/">Instagram</a><br><br>
+      <a id="twitter" class="socialmedia tags" href="https://twitter.com/techadvisorhq">Twitter</a>
+    </div>
+    <div class="body">
+      <!-- Text 1 -->
+      <p>
+        For someone with a deeply scientific job, Gil Herrera has a nearly mystical mandate: Look into the future and then shape it, at the level of strange quantum physics and inextricable math theorems, to the advantage of the United States.
+        <br><br>
+        Herrera is the newly minted leader of the National Security Agency’s Research Directorate. The directorate, like the rest of the NSA, has a dual mission: secure American systems and spy on the rest of the world. The budget is classified, a
+        secret among secrets, but the NSA is one of the world’s largest spy agencies by any measure and Herrera’s directorate is the entire US intelligence community’s biggest in-house research and development arm. The directorate must come up with
+        solutions to problems that are not yet real, in a world that doesn’t yet exist.
+        <br><br>
+        In his first interview since getting the job, Herrera lays out the tech—and threats—his group will now be focusing on. His priorities show how much the NSA’s targets are changing, balancing its work surveilling terror groups with an
+        appreciation of how rapidly the geopolitical landscape has shifted in recent years. And he explains why the rise of new technologies, in terms of both threat and opportunity, are at the heart of what his group must contend with.
+        <br><br>
+        Herrera takes the helm as the agency faces new challenges. The bipolar world of the Cold War belongs to the history books. The United States’ quick turn as a lone superpower is over. The new world is a messier one, defined by an emerging era
+        of great power competition among nations like the United States, China, and Russia. Meanwhile, the NSA is still recovering from a massive set of leaks published nine years ago about global and domestic surveillance programs that set off a
+        firestorm of criticism and calls for reform and changed the average American’s perception of the NSA. The companies that worked with them recoiled in embarrassment and anger. And it also changed the way the NSA operates.
+        <br><br>
+        “We're at a point now where we need to start focusing more on larger adversaries, more sophisticated adversaries, adversaries that don't necessarily utilize commercial services,” says Herrera. “These are adversaries that have their own
+        indigenous services and that create their own technology. So as a research directorate, we need to respond. We need to provide the technologies that allow us to interrogate the huge amounts of information brought to us and to help monitor the
+        kinds of systems that are now emerging as a result of great power competition.”
+        <br><br>
+        The rate of technological change is accelerating and becoming less predictable.
+        “Any time there's that kind of a shift, it's complex,” says Herrera. “Each generation of technology presents its new challenges.”
+      </p>
+      <!-- Image -->
+      <img class="media" src="../images/technology.jpg" alt="Technology Handshake" width="1150" height="647" />
+      <!-- Text 2 -->
+      <p>For example, the directorate has devoted significant resources toward mastering quantum computing, technology that has the potential to break the encryption used to protect sensitive data in the digital world of today and tomorrow. Powerful
+        countries, companies, and universities are pouring money into the task of building a quantum computer powerful enough to perform exponentially faster than the computers of today.
+        <br><br>
+        “Great power competition drives the agenda,” says Herrera. “It changes the kind of technology and access we need. Technologies like quantum and 5G are part of that.”
+        <br><br>
+        The directorate has been at the forefront of quantum computing research since 1995, immediately following the advent of Shor’s algorithm, which showed how quantum computers can factor numbers exponentially faster than normal computers—exactly
+        the kind of work needed to break encryption.
+        <br><br>
+        The directorate’s fingerprints now show up in the form of fundamental research advancing the field and even inside the most advanced computers built at giant tech firms. The highly publicized race to build the world’s best quantum computer is
+        proof of this: both Google and IBM use the same basic building block in their machines to create quantum behavior, known as transmon qubits, which was invented under the directorate’s sponsorship. Historically, the NSA has been the single
+        largest funder of academic quantum computing research, says Herrera.
+        <br><br>
+        Herrera is hesitant to discuss specifics about what his directorate is zeroing in on, but when asked about the challenges of spying in a world of rapid technical advancement, he agrees and points to the emergence of 5G around the world. 5G
+        brings its own new challenges for collecting intelligence, Herrera explains. Monitoring 5G successfully requires a deep understanding of what makes it fundamentally different from its predecessors: higher speed, lower range, more distribution
+        nodes, different data protocols.
+        <br><br>
+        Understanding what will happen in the world tomorrow requires a mastery of the elements that will define it.
+      </p>
+      <h1>Future history</h1>
+      <p>The NSA’s Research Directorate is descended from the Black Chamber, the first group of civilian codebreakers in the United States who were tasked with spying on cutting-edge technology, like the telegraph. Existing only from 1919 to 1929,
+        the group decoded over 10,000 messages from a dozen nations, according to James Bamford’s 2001 book Body of Secrets: Anatomy of the Ultra-Secret National Security Agency. In addition to groundbreaking cryptanalytic work, the group succeeded
+        by securing surveillance help from American cable companies like Western Union that could supply the newly minted US spies with sensitive communications to examine.
+        <br><br>
+        The Black Chamber was shut down amid scandal when US Secretary of State Henry Stimson found out the group was spying on American allies as well as foes. The incident foreshadowed the 1975 Church Committee, which investigated surveillance
+        abuses by American intelligence agencies, and the 2013 Snowden leaks, which exposed vast electronic surveillance capabilities that triggered a global reckoning.
+        <br><br>
+        Just eight months after the Black Chamber was shuttered, the US, faced with the prospect of crippled spying capabilities in the increasingly unstable world of the 1930s, reformed the effort under the Army’s Signals Intelligence Service. One
+        of just three people working with the Black Chamber’s old records, one of the founders of the SIS, which Bamford reports was kept a secret from the State Department, was the mathematician Solomon Kullback.
+        <br><br>
+        Kullback was instrumental in breaking both Japanese and German codes before and during World War II, and he later directed the research and development arm of the newly formed National Security Agency. Within a year, that evolved into the
+        directorate as we know it today: a distinct space for research that is not disrupted by the daily work of the agency.
+        “It’s important to have a research organization, even in a mission-driven organization, to be thinking beyond a crisis,” says Herrera, though he adds that the directorate does dedicate some of its work to the “crisis of the day.” It runs a
+        program called “scientists on call,” which allows NSA mission analysts facing technical challenges while interrogating information to ask for help via email, giving them access to hundreds of scientists.
+      </p>
+      <h1>Forward looking</h1>
+      <p>But the lion’s share of the directorate’s work is envisioning the technologies that are generations ahead of what we have today. It operates almost like a small, elite technical college, organized around five academic departments—math,
+        physics, cyber, computer science, and electrical engineering—each staffed with 100 to 200 people.
+        <br><br>
+        The cybersecurity department defends the federal government’s national security and the country’s military-industrial base. This is the highest-profile department, and deliberately so. Over the last five years, the previously shadowy NSA has
+        become more vocal and active in cybersecurity. It has launched public advisories and research projects that would once have been anathema for an organization whose existence wasn’t even acknowledged until 20 years after its founding.
+        <br><br>
+        Now the products of NSA research, like Ghidra, a free, sophisticated reverse engineering tool that helps in the technical dissection of hacking tools, as well as other software, are popular, trusted, and in use around the world. They serve as
+        powerful cybersecurity tools, a recruiting pitch, and a public relations play all wrapped into one.
+        <br><br>
+        The physics department, which Herrera once directed, runs dozens of laboratories that conduct most of the work on quantum information sciences, but it has a much wider remit than that. As physical limits in the ability to squeeze more
+        transistors into chips threaten to slow and halt 60 years of predictably rapid computing growth, its physicists are exploring new materials and novel computing architectures to drive the next generation of computing into a less predictable
+        future, exactly the kind of task the directorate was given when it first came into existence.
+        <br><br>
+        Meanwhile, the electrical engineering department has been looking closely at the physics and engineering of telecommunications networks since the internet first arose. As well as the issues around 5G, it also tackles every facet of the
+        digital world, from undersea cables to satellite communications.
+        <br><br>
+        Some prospects on the horizon don’t fit neatly into any particular box. The computer science department’s work on artificial intelligence and machine learning, for example, cuts across cybersecurity missions and data analysis work with the
+        mathematicians.
+        <br><br>
+        Herrera repeatedly raises the prospect of the directorate needing to develop greater capabilities in and understanding of rapidly advancing fields like synthetic biology. The NSA is hardly alone in this: Chinese military leaders have called
+        biotech a priority for national defense.
+        <br><br>
+        “Much of the competition in the world now is not military,” Herrera says. “Military competition is accelerating, but there is also dissemination of other technologies, like synthetic biologies, that are frankly alarming. The role of research
+        is to help the NSA understand what the impact of those technologies will be. How much we actually get involved, I don’t know, but these are areas we have to keep an eye on.”
+      </p>
+      <!-- Image -->
+      <img class="media" src="../images/biology.jpg" alt="Biology" width="1150" height="647" />
+      <!-- Text 3 -->
+      <p>Finally, the math department, the directorate’s oldest, is unique. Herrera describes math as a core defining work of the directorate. The NSA is the country’s biggest employer of mathematicians, and the directorate boasts some of the best.
+        Virtually every other department in the NSA’s Research Directorate suffers from having to compete with tech companies and the high salaries available in the private sector. The math department does not have that issue, Herrera says. Silicon
+        Valley typically values software developers more than it does mathematicians.
+        <br><br>
+        The math department, often in conjunction with the computer science department, helps tackle one of NSA’s most interesting problems: big data. Despite public reckoning over mass surveillance, NSA famously faces the challenge of collecting
+        such extreme quantities of data that, on top of legal and ethical problems, it can be nearly impossible to sift through all of it to find everything of value. NSA views the kind of “vast access and collection” that it talks about internally
+        as both an achievement and its own set of problems. The field of data science aims to solve them.
+        <br><br>
+        “Everyone thinks their data is the messiest in the world, and mine maybe is because it’s taken from people who don’t want us to have it, frankly,” said Herrera’s immediate predecessor at the NSA, the computer scientist Deborah Frincke, during
+        a 2017 talk at Stanford. “The adversary does not speak clearly in English with nice statements into a mic and, if we can’t understand it, send us a clearer statement.”
+        <br><br>
+        Making sense of vast stores of unclear, often stolen data in hundreds of languages and even more technical formats remains one of the directorate’s enduring tasks.
+        <br><br>
+        In the digital age, one of the primary goals of spying would be the ability to decode important data are currently protected by strong encryption. That’s why the Research Directorate’s mathematicians and computer scientists design and break
+        cryptography algorithms for some of the world’s most sensitive systems.
+        <br><br>
+        The building and breaking of code is at the core of what the directorate does because, when the NSA looks into the future, what it sees is an increasingly digital world filled with data. Its ability to both protect and surveil it will help
+        define great power competition for a long time.
+        <br><br>
+        “In the future, superpowers will be made or broken based on the strength of their cryptanalytic programs,” a 2007 document from the agency explained. “It is the price of admission for the US to maintain unrestricted access to and use of
+        cyberspace.”
+        “The Research Directorate exists to enable the mission,” Herrera says. “From atoms to systems, we do research with the mission in mind.”
+      </p>
+      <!-- Author details -->
+      <div class="box-info">
+        <img class="box-image" src="../images/journalist.jpg" alt="Journalist1" width="150" height="150" />
+        <h1 class="box-heading">Pheobe Indigo</h1>
+        <p class="info">Senior Journalist</p>
+        <p class="info">Phoebe Indigo is an experienced journalist that is very enthusiastic in her job. She is one of the most trusted journalist of Techadvisor and has been known to get huge praise from the viewers and the public for her reliable
+          and enjoyable journalism</p>
+      </div>
+      <!-- Other articles -->
+      <div id="row1" class="row">
+        <div id="article1" class="container1 col" onclick="article1()">
+          <img id="chrome" class="images" src="../images/chrome.jpg" alt="Chrome OS Flex" width="560" height="350" />
+          <p id="headline-text" class="secondary-text">Meet Chrome OS Flex, Google's new weapon for desktop domination</p>
+          <p id="tag1" class="tags headline">News</p>
+        </div>
+        <div id="article3" class="container3 col" onclick="article3()">
+          <img id="projector" class="images" src="../images/projector.jpg" alt="Samsung projector" width="560" height="350" />
+          <p id="projector-text" class="secondary-text">Samsung The Freestyle projector (2022) review</p>
+          <p id="tag3" class="tags">Reviews</p>
+        </div>
+      </div>
+      <div id="row2" class="row">
+        <div id="article4" class="container4 col" onclick="article4()">
+          <img id="laptop" class="images" src="../images/laptop.jpg" alt="Example laptop" width="560" height="350" />
+          <p id="laptop-text" class="secondary-text">The best laptops: Premium laptops, budget laptops, 2-in-1s, and more</p>
+          <p id="tag4" class="tags">Best Buys</p>
+        </div>
+        <div id="article5" class="container5 col" onclick="article5()">
+          <img id="usb" class="images" src="../images/usb.jpg" alt="Usb attack" width="560" height="350" />
+          <p id="usb-text" class="secondary-text">Don't Plug It In! How to Prevent a USB Attack</p>
+          <p id="tag5" class="tags">How to</p>
+        </div>
+      </div>
+    </div>
+    <!-- Comments section -->
+    <div class="comment-heading">
+      <h5>Comments</h5>
+    </div>
+    <div class="comments">
+      <div id="allComments"></div>
+      <textarea id="newComment"></textarea><br>
+      <button id="addComments">Add Comment</button>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <img id="logo2" src="../images/logo.jpg" alt="Techadvisor logo" width="200" height="70" /><br>
+    <p class="footer-details">About Us</p>
+    <p class="footer-details">Contact</p>
+    <p class="footer-details">Privacy Policy</p>
+    <p class="footer-details">Cookie Policy</p>
+    <p class="footer-details">Advertising</p>
+    <br>
+    <img id="copyright" src="../images/idg.jpg" alt="IDG Copyright" width="300" height="50" />
+  </footer>
+  <script src="../js/article2.js"></script>
+</body>
+
+</html>

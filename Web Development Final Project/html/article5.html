@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>Tech Advisor From IDG</title>
+  <!-- Meta information -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Technological News Worldwide">
+  <meta name="keywords" content="Technology,News,Articles">
+  <meta name="author" content="Foo Chuan Yong">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS stylesheet and JS file links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/article5.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script id="address-template" type="text/x-handlebars-template">
+    <p id="author">By {{author}} on {{date}}, {{time}}</p>
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header>
+    <ul>
+      <li id="logo"><a href="../index.html"><img src="../images/logo.jpg" alt="Techadvisor logo" width="140" height="54" /></a></li>
+      <li id="home"><a href="../index.html"><img src="../images/home.jpg" alt="Techadvisor logo" width="30" height="24" /></a></li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">News
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../html/article1.html">News1</a>
+            <a href="../html/article2.html">News2</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../html/article3.html">Reviews</a></li>
+      <li><a href="../html/article4.html">Best Buys</a></li>
+      <li id="how-to"><a href="../html/article5.html">How to</a></li>
+      <li><a href="../html/report.html">Report</a></li>
+    </ul>
+    <!-- Searchbar -->
+    <div class="form">
+      <form autocomplete="off" class="navbar-form navbar-left" action="/action_page.php">
+        <div class="input-group">
+          <input list="browsers" type="text" id="input1" value="" class="form-control" placeholder="Search" name="search" required />
+          <!-- Autocomplete -->
+          <datalist id="browsers">
+            <option value="Home">
+            <option value="News1">
+            <option value="News2">
+            <option value="Reviews">
+            <option value="Best Buys">
+            <option value="How To">
+            <option value="Report">
+          </datalist>
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit" onclick="submitinputs()">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </header>
+  <!-- Main image -->
+  <img class="media" id="usb" src="../images/usb.jpg" alt="Usb attack" width="1520" height="700" />
+  <!-- Heading -->
+  <h1 id="heading">Don't Plug It In! How to Prevent a USB Attack</h1>
+  <div id="content-placeholder"></div>
+  <div class="grid-container-index">
+    <!-- Social media tags -->
+    <div class="socialmedia">
+      <a id="facebook" class="socialmedia tags" href="https://www.facebook.com/TechAdvisorHQ/">Facebook</a><br><br>
+      <a id="instagram" class="socialmedia tags" href="https://www.instagram.com/techadvisorhq/">Instagram</a><br><br>
+      <a id="twitter" class="socialmedia tags" href="https://twitter.com/techadvisorhq">Twitter</a>
+    </div>
+    <div class="body">
+      <!-- Text 1 -->
+      <p>In the age of email-based cyberattacks, it's easy to forget that hackers can also worm their way into systems big and small with physical components, particularly USB devices.
+        According to a report by Honeywell Forge, 79% of USB cyberattacks are capable of disrupting operational technology, like the day-to-day functions of an industrial plant. Fifty-one percent of them can give an attacker remote access. But it
+        isn’t just big industry that should guard against these threats; individuals should be wary of them, too. Here we’ll explain what a USB attack is, and how you can avoid falling victim to one.
+      </p>
+      <h1>What Is a USB Attack?</h1>
+      <p>A USB attack pretty much does what it says on the tin: it uses a USB-connected device, like a thumb drive or hard drive, to get malicious software into a computer or other USB-connected device, such as a smartphone. Bad USB devices can also
+        be used to damage or destroy a computer by delivering an electrical charge.
+        <br><br>
+        One of the most concerning aspects of USB attacks is their ability to give hackers remote control of a system. The Stuxnet attack discovered in 2010, for example, famously infected Iranian nuclear development sites. The same kinds of breaches
+        could be used to infiltrate facilities connected to the power grid, oil production, and other Internet of Things networks.
+        <br><br>
+        There are dozens of ways a cyberattacker could use a USB drive to install an exploit on your computer. The two most common are via thumb drive devices and public USB charging ports, a practice known as juice jacking.
+        <br><br>
+        USB device attacks fall into three major categories, depending on what they do once they’re connected to your device. Devices with reprogrammed internal microcontrollers will look like regular thumb drives, but once plugged in, they'll
+        execute another function, e.g. acting like a keyboard and typing certain keystrokes. Examples include the Rubber Ducky attack.
+        <br><br>
+        USB devices with reprogrammed internal firmware are changed so that their firmware automatically executes a certain function once they’re connected, like installing malware or stealing data. One example of this is the iSeeYou attack, which
+        reprogrammed a particular class of Apple webcams so the attacker could record video without a person’s knowledge.
+        <br><br>
+        USB attacks can also exploit existing flaws in the way computers and USB devices interact. A common example of this attack is the Device Firmware Upgrade (DFU) attack, which uses a USB device to reprogram legitimate firmware into something
+        more malicious.
+        <br><br>
+        There are even attacks like USB killer, in which a connected USB device stores power from a computer’s USB power lines until it reaches a certain level, then aggressively discharges it and fries the connected computer.
+      </p>
+      <!-- Carousel1 -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides first-slide">
+          <div class="numbertext">1 / 4</div>
+          <img src="../images/usb2.jpg" alt="usb2" style="width:100%" height="600">
+          <div class="text">Image 1</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="../images/usb3.jpg" alt="usb3" style="width:100%" height="600">
+          <div class="text">Image 2</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="../images/usb4.jpg" alt="us42" style="width:100%" height="600">
+          <div class="text">Image 3</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="../images/usb5.jpg" alt="usb5" style="width:100%" height="600">
+          <div class="text">Image 4</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <!-- Text 2 -->
+      <h1>How to Avoid USB Attacks</h1>
+      <p>While these attacks sound scary, there are ways to prevent them.</p>
+      <h5>Don't Plug In Unknown Drives</h5>
+      <p>A good deal of USB threats come down to social engineering, or psychological tricks and tactics to get people to connect a bad device. This is present in just about every type of cyberattack and scam, and it’s important not to fall for it.
+        <br><br>
+        If you see a USB drive you don’t recognize dropped somewhere—such as a parking lot—do not connect it to your computer. Bad actors rely on human curiosity to help them get your device infected. They’ll drop it in a public location, like at a
+        hospital, and wait for someone to plug it in. This is called a drop attack.
+        <br><br>
+        Another common tactic is sending USB drives to people in the mail and making them look like promo offers from big box tech stores like Best Buy. Bottom line: be wary of any USB drives you find or receive unsolicited for free, whether it's
+        from a company you know or don't recognize.
+      </p>
+      <h5>Work-Life Balance</h5>
+      <p>
+        If you use a USB drive for work, keep it separate from anything personal to avoid transferring malicious software from your home computer to your professional network. You can also regularly scan your USB devices with an antivirus and/or
+        anti-malware program, while encryption software may keep attackers from accessing your data in the event of a breach. If you think you might’ve plugged a compromised device into your computer, disconnect from the internet right away and
+        restart your computer.
+      </p>
+      <h5>Disable Autorun</h5>
+      <p>
+        Disabling autorun features on your devices will help keep malicious code from automatically executing when you plug in a drive. On Windows, open Control Panel and find the AutoPlay setting. Uncheck Use AutoPlay for all media and devices to
+        prevent unknown devices from launching without alerting you or asking for permission.</p>
+      <h5>Get Off the Grid</h5>
+      <p>If you absolutely need to find out what’s on an unfamiliar flash drive, you could try using a computer that’s “air gapped,” meaning it's not connected to the internet or other networks.
+        <br>
+        Air-gapped computers don’t mean airtight security. The Iranian nuclear development facility that was compromised in the Stuxnet attack used an air-gapped network, and was compromised with a bad USB. Once the drive was connected, the malicious
+        software was unleashed. So if you test a suspicious drive on an air-gapped computer, that’s the only thing you should use that computer for, and the suspect USB drive should not be connected to any other computers in your network.
+      </p>
+      <!-- Carousel 2 -->
+      <div class="slideshow-container">
+        <div class="mySlides2 first-slide">
+          <div class="numbertext">1 / 4</div>
+          <img src="../images/usb6.jpg" alt="usb6" style="width:100%" height="600">
+          <div class="text">Image 1</div>
+        </div>
+
+        <div class="mySlides2">
+          <div class="numbertext">2 / 4</div>
+          <img src="../images/usb7.jpg" alt="usb7" style="width:100%" height="600">
+          <div class="text">Image 2</div>
+        </div>
+
+        <div class="mySlides2">
+          <div class="numbertext">3 / 4</div>
+          <img src="../images/usb8.jpg" alt="usb8" style="width:100%" height="600">
+          <div class="text">Image 3</div>
+        </div>
+        <div class="mySlides2">
+          <div class="numbertext">4 / 4</div>
+          <img src="../images/usb9.jpg" alt="usb9" style="width:100%" height="600">
+          <div class="text">Image 4</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+      </div>
+      <!-- Text 3 -->
+      <h5>Go Virtual</h5>
+      <p>If you’re more tech savvy, try downloading virtualization software, such as Oracle's free VirtualBox. It lets you create a virtual environment on your computer that runs a simulated instance of your computer inside your computer. You can
+        plug in the drive and open it in the virtual environment without it affecting your files or network. Windows Sandbox is also a built-in option for Windows users.</p>
+      <h5>Don't Ignore Updates</h5>
+      <p>Keep your systems updated, especially if you’re running Windows. Many attackers take advantage of the fact that people often delay updating their systems, even if they include patches for serious bugs.</p>
+      <h5>Keep Your Guard Up</h5>
+      <p>No cybersecurity method is foolproof, and that includes steps taken to prevent USB attacks. The methods described here are, however, a whole lot better than plugging in a weird USB drive you found and hoping for the best.</p>
+      <p>Remember never to trust unfamiliar drives, scan the ones you do use regularly, and take advantage of security options like passwords, PIN keys, and data encryption. Hopefully, awareness of the tactics that cyberattackers use coupled with
+        solid hardware and software security will help you stay free of any nasty digital infections.</p>
+      <!-- Author information -->
+      <div class="box-info">
+        <img class="box-image" src="../images/journalist4.jpg" alt="Journalist4" width="150" height="150" />
+        <h1 class="model" id="box-heading">Tim Hugo</h1>
+        <p class="info">Senior Executive Journalist </p>
+        <p class="info">Tim Hugo is a reputable journalist that has worked for many newsletter and magazine websites and is hence one of the most trusted members of our team </p>
+      </div>
+      <!-- Other articles -->
+      <div id="row1" class="row">
+        <div id="article1" class="container1 col" onclick="article1()">
+          <img id="chrome" class="images" src="../images/chrome.jpg" alt="Chrome OS Flex" width="560" height="350" />
+          <p id="headline-text" class="secondary-text">Meet Chrome OS Flex, Google's new weapon for desktop domination</p>
+          <p id="tag1" class="tags headline">News</p>
+        </div>
+        <div id="article2" class="container2 col" onclick="article2()">
+          <img id="nsa" class="images" src="../images/nsa.jpg" alt="NSA spies" width="560" height="350" />
+          <p id="nsa-text" class="secondary-text">Meet the NSA spies shaping the future</p>
+          <p id="tag2" class="tags">News</p>
+        </div>
+      </div>
+      <div id="row2" class="row">
+        <div id="article3" class="container3 col" onclick="article3()">
+          <img id="projector" class="images" src="../images/projector.jpg" alt="Samsung projector" width="560" height="350" />
+          <p id="projector-text" class="secondary-text">Samsung The Freestyle projector (2022) review</p>
+          <p id="tag3" class="tags">Reviews</p>
+        </div>
+        <div id="article4" class="container4 col" onclick="article4()">
+          <img id="laptop" class="images" src="../images/laptop.jpg" alt="Example laptop" width="560" height="350" />
+          <p id="laptop-text" class="secondary-text">The best laptops: Premium laptops, budget laptops, 2-in-1s, and more</p>
+          <p id="tag4" class="tags">Best Buys</p>
+        </div>
+      </div>
+    </div>
+    <!-- Comments section -->
+    <div class="comment-heading">
+      <h5>Comments</h5>
+    </div>
+    <div class="comments">
+      <div id="allComments"></div>
+      <textarea id="newComment"></textarea><br>
+      <button id="addComments">Add Comment</button>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <img id="logo2" src="../images/logo.jpg" alt="Techadvisor logo" width="200" height="70" /><br>
+    <p class="footer-details">About Us</p>
+    <p class="footer-details">Contact</p>
+    <p class="footer-details">Privacy Policy</p>
+    <p class="footer-details">Cookie Policy</p>
+    <p class="footer-details">Advertising</p>
+    <br>
+    <img id="copyright" src="../images/idg.jpg" alt="IDG Copyright" width="300" height="50" />
+
+  </footer>
+  <script src="../js/article5.js"></script>
+</body>
+
+</html>
