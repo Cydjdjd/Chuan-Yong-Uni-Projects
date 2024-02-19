@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reader Article</title>
+    <link rel="stylesheet" href="/reader/article.css">
+</head>
+
+<body>
+    <h1 class="titles">
+        <%=publishData[0].Title%>
+    </h1>
+    <h4 class="titles">
+        <%=publishData[0].Subtitle%>
+    </h4>
+    <h5 class="titles">
+        Published:<%=publishData[0].Published%>
+    </h5>
+    <form class="likeButton" action="/reader/likes/<%=publishData[0].BlogId%>" method="post">
+        <input type="submit" name="likeButton" class="likeButton" value="Like:<%=publishData[0].Likes%>">
+    </form>
+    <p>
+        <%=publishData[0].ArticleText%>
+    </p>
+    <form action="/reader/comments/<%=publishData[0].BlogId%>>" method="post">
+        <h4>Comments:</h4>
+        <%if(comments.length!=0){%>
+            <%for(var i=0;i<comments.length;i++){%>
+                <%console.log(comments[i])%>
+                    <input class="boxes" type="text" value="<%=comments[i].commentInput%>" readonly>
+                    <%}%>
+                        <%}%>
+                            <input type="text" id="commentInput" name="commentInput" placeholder="Add a comment"><br>
+                            <input type="submit" value="Submit">
+    </form>
+    <form class="readerHomepage" action="/reader/homepage" method="get">
+        <input type="submit" value="Reader Homepage" name="readerHomepage" class="readerHomepage"></input>
+    </form>
+</body>
+
+</html>

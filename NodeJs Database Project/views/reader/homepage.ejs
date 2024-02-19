@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reader Homepage</title>
+    <link rel="stylesheet" href="/reader/homepage.css">
+</head>
+
+<body>
+    <h1 class="titles">
+        <%=titles[0]%>
+    </h1>
+    <h4 class="titles">
+        <%=titles[1]%>
+    </h4>
+    <h5 class="titles">
+        <%=titles[2]%>
+    </h5>
+    <h5 id="pageTitle">Author Homepage</h5>
+    <h3>Published Articles</h3>
+    <table>
+        <tr>
+            <%for(var i=0;i<tableTitles.length;i++){%>
+                <th class="tableTitle">
+                    <%=tableTitles[i]%>
+                </th>
+                <% }%>
+        </tr>
+        <%for(var i=0;i<publishData.length;i++){%>
+
+            <tr>
+                <td class="tableData">
+                    <%=publishData[i].BlogId %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Title %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Subtitle %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Created %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].lastModified %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Published %>
+                </td>
+                <td class="tableData">
+                    <form class="shareButtons" action="/reader/share/<%=publishData[i].BlogId%>" method="get">
+                        <input type="submit" name="shareButton" class="shareButtons" value="Share"></input>
+                    </form>
+                    <form class="deleteButtons" action="/reader/publishDelete/<%=publishData[i].BlogId%>" method="get">
+                        <input type="submit" name="deleteButton" class="deleteButtons" value="Delete"></input>
+                    </form>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Likes %>
+                </td>
+            </tr>
+
+            <% }%>
+    </table>
+</body>
+
+</html>

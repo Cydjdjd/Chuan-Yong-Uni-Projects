@@ -1,0 +1,22 @@
+#articleText {
+    width: 1000px;
+    border: 1px solid #999999;
+    padding: 0px 0px 400px 0px;
+}
+
+#created,
+#lastModified {
+    border-width: 0px;
+}
+
+.created,
+.lastModified {
+    display: inline-block;
+    margin: 2px 0px;
+}
+.homepage{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    font-size: 15px;
+}

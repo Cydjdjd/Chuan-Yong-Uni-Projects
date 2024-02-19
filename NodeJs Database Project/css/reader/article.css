@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titles {
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+.likeButton {
+    position: relative;
+    bottom: 15px;
+
+}
+
+.boxes {
+    display: block;
+    margin: 10px 0px;
+    width: 500px;
+}
+.readerHomepage{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    font-size: 15px;
+}

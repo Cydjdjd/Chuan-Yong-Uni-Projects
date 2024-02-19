@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Article Page</title>
+    <link rel="stylesheet" href="/author/create-user-record.css">
+
+</head>
+
+<body>
+    <h1>Create article</h1>
+    <form action="/author/edit/<%=UserId%>" method="post">
+        <label for="blogId">BlogId:</label><br>
+        <input type="text" id="blogId" name="blogId"
+            value="<%if(typeof editData!='undefined'){%><%=editData[0].BlogId%><%}%>"><br>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"
+            value="<%if(typeof editData!='undefined'){%><%=editData[0].Title%><%}%>"><br>
+        <label for="subtitle">Subtitle:</label><br>
+        <input type="text" id="subtitle" name="subtitle"
+            value="<%if(typeof editData!='undefined'){%><%=editData[0].Subtitle%><%}%>"><br>
+        <label for="articleText">Article Text:</label><br>
+        <input type="text" id="articleText" name="articleText"
+            value="<%if(typeof editData!='undefined'){%><%=editData[0].ArticleText%><%}%>"></input><br>
+        <p class="created">Created:</p>
+        <input class="created" text="text" id="created"
+            value="<%if(typeof editData!='undefined'){%><%=editData[0].Created%><%}%>" readonly></input>
+        <p class="lastModified">Last Modified:</p>
+        <input class="lastModified" text="text" id="lastModified"
+            value="<%if(typeof editData!='undefined'){%><%=editData[0].lastModified%><%}%>" readonly></input><br>
+        <input type="submit" value="Update">
+    </form>
+    <form class="homepage" action="/author/homepage/<%=UserId%>" method="get">
+        <input type="submit" value="Homepage" name="homepage" class="homepage"></input>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/author/login.css">
+</head>
+
+<body>
+    <h1>Login page</h1>
+    <form class="buttons" action="/api/login" method="post">
+        <label for="email">Email:</label><br>
+        <input type="text" id="Email" name="Email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="Password" name="Password"><br>
+        <input type="submit" name="Login" value="Login" class="buttons">
+    </form>
+    <form class="buttons" id="register">
+        <input type="submit" name="Register" value="Register Here" class="buttons" formaction="/register" method="get">
+    </form>
+</body>
+
+</html>

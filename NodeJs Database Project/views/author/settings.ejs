@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Settings</title>
+    <link rel="stylesheet" href="/author/settings.css">
+
+</head>
+
+<body>
+    <h1>Blog Settings</h1>
+    <form action="/author/settingsSubmit/<%=UserId%>" method="post">
+        <label for="blogTitle">Blog Title:</label><br>
+        <input type="text" id="blogTitle" name="blogTitle"
+            value="<%if(editData.length!=0){%><%=editData[editData.length-1].BlogTitle%><%}%>"><br>
+        <label for="subtitle">Subtitle:</label><br>
+        <input type="text" id="subtitle" name="subtitle"
+            value="<%if(editData.length!=0){%><%=editData[editData.length-1].Subtitle%><%}%>"><br>
+        <label for="authorName">Author Name:</label><br>
+        <input type="text" id="authorName" name="authorName"
+            value="<%if(editData.length!=0){%><%=editData[editData.length-1].AuthorName%><%}%>"><br>
+        <input type="submit" value="Update">
+    </form>
+    <form class="homepage" action="/author/homepage/<%=UserId%>" method="get">
+        <input type="submit" value="Homepage" name="homepage" class="homepage"></input>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titles {
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+#pageTitle {
+    position: relative;
+    bottom: 120px;
+    left: 0px;
+}
+
+.tableTitle {
+    margin: 0px;
+    padding: 0px 100px 0px 0px;
+    position: relative;
+    right: 0px;
+    font-size: 15px;
+}
+
+.pageSettings {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    font-size: 15px;
+}
+
+.logout {
+    position: absolute;
+    top: 27px;
+    right: 0px;
+    font-size: 15px;
+    width: 70px;
+}
+.readerHomepage{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    font-size: 15px;
+}
+.createButton {
+    display: inline-block;
+}
+
+.editButtons {
+    display: inline-block
+}
+
+.deleteButtons {
+    display: inline-block;
+}
+
+.publishButtons {
+    display: inline-block;
+}
+
+.shareButtons {
+    display: inline-block;
+}

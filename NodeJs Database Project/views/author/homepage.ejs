@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Author Homepage</title>
+    <link rel="stylesheet" href="/author/homepage.css">
+</head>
+
+<body>
+    <h1 class="titles">
+        <%console.log(titles)%>
+            <%if(titles.length!=0){%> <%=titles[titles.length-1].BlogTitle%>
+                    <%}%>
+    </h1>
+    <h4 class="titles">
+        <%if(titles.length!=0){%> <%=titles[titles.length-1].Subtitle%>
+                <%}%>
+    </h4>
+    <h5 class="titles">
+        <%if(titles.length!=0){%> <%=titles[titles.length-1].AuthorName%>
+                <%}%>
+    </h5>
+    <h5 id="pageTitle">Author Homepage</h5>
+    <form class="readerHomepage" action="/reader/homepage" method="get">
+        <input type="submit" value="Reader Homepage" name="readerHomepage" class="readerHomepage"></input>
+    </form>
+    <form class="pageSettings" action="/author/settings/<%=UserId%>" method="get">
+        <input type="submit" value="Settings" name="pageSettings" class="pageSettings"></input>
+    </form>
+    <form class="logout" action="../logout" method="get">
+        <input type="submit" value="Logout" name="logout" class="logout"></input>
+    </form>
+    <h3>Draft Articles</h3>
+    <table>
+        <tr>
+            <% for(var i=0;i<tableTitles.length-3;i++){%>
+                <th class="tableTitle">
+                    <%=tableTitles[i]%>
+                </th>
+                <% }%>
+                <th class="tableTitle">
+                    <%=tableTitles[tableTitles.length-2]%>
+                </th>
+        </tr>
+        <%for(var i=0;i<blogsData.length;i++){%>
+
+            <tr>
+                <td class="tableData">
+                    <%=blogsData[i].BlogId %>
+                </td>
+                <td class="tableData">
+                    <%=blogsData[i].Title %>
+                </td>
+                <td class="tableData">
+                    <%=blogsData[i].Subtitle %>
+                </td>
+                <td class="tableData">
+                    <%=blogsData[i].Created %>
+                </td>
+                <td class="tableData">
+                    <%=blogsData[i].lastModified %>
+                </td>
+                <td class="tableData">
+                    <form class="editButtons" action="/author/edit/<%=blogsData[i].BlogId%>/<%=UserId%>" method="get">
+                        <input type="submit" name="editButton" class="editButtons" value="Edit"></input>
+                    </form>
+                    <form class="deleteButtons" action="/author/delete/<%=blogsData[i].BlogId%>/<%=UserId%>"
+                        method="get">
+                        <input type="submit" name="deleteButton" class="deleteButtons" value="Delete"></input>
+                    </form>
+                    <form class="publishButtons" action="/author/publish/<%=blogsData[i].BlogId%>/<%=UserId%>"
+                        method="post">
+                        <input type="submit" name="publishButton" class="publishButtons" value="Publish"></input>
+                    </form>
+                </td>
+            </tr>
+
+            <% }%>
+    </table><br>
+    <form action="../../user/create-user-record/<%=UserId%>" method="get">
+        <button class="createButton" name="createButton" value="Create New Draft">Create New Draft</button>
+    </form><br>
+    <h3>Published Articles</h3>
+    <table>
+        <tr>
+            <% for(var i=0;i<tableTitles.length;i++){%>
+                <th class="tableTitle">
+                    <%=tableTitles[i]%>
+                </th>
+                <% }%>
+        </tr>
+        <%for(var i=0;i<publishData.length;i++){%>
+
+            <tr>
+                <td class="tableData">
+                    <%=publishData[i].BlogId %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Title %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Subtitle %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Created %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].lastModified %>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Published %>
+                </td>
+                <td class="tableData">
+                    <form class="shareButtons" action="/reader/share/<%=publishData[i].BlogId%>" method="get">
+                        <input type="submit" name="shareButton" class="shareButtons" value="Share"></input>
+                    </form>
+                    <form class="deleteButtons" action="/author/publishDelete/<%=publishData[i].BlogId%>/<%=UserId%>"
+                        method="get">
+                        <input type="submit" name="deleteButton" class="deleteButtons" value="Delete"></input>
+                    </form>
+                </td>
+                <td class="tableData">
+                    <%=publishData[i].Likes %>
+                </td>
+            </tr>
+
+            <% }%>
+    </table>
+</body>
+
+</html>
