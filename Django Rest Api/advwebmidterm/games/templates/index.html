@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="Index page">
+            <meta name="keywords" content="Hyperlinks,Endpoints">
+            <meta name="author" content="Foo Chuan Yong">
+        </head>
+        <body>
+            <ul>
+                <li>
+                    <p>GET,POST http://127.0.0.1:8000/games/ - Get all games and post new game</p>
+                    <a href="http://127.0.0.1:8000/games/">http://127.0.0.1:8000/games/</a>
+                </li>
+
+                <li>
+                    <p>GET,DELETE,PUT http://127.0.0.1:8000/games/[id] - Get,update and delete single game </p>
+                    <a href="http://127.0.0.1:8000/games/1">http://127.0.0.1:8000/games/1</a>
+                </li>
+                <li>
+                    <p>PUT http://127.0.0.1:8000/sort_rank/[sale_index] - Update rank based on selected sales figure</p>
+                    <a href="http://127.0.0.1:8000/sort_rank/1">http://127.0.0.1:8000/sort_rank/1</a>
+                </li>
+                <li>
+                    <p>GET,DELETE http://127.0.0.1:8000/games_range/[rank]/[range_used] - Get and delete range of games based on parameters put in</p>
+                    <a href="http://127.0.0.1:8000/games_range/1/10">http://127.0.0.1:8000/games_range/1/10</a>
+                </li>
+                <li>
+                    <p>PUT http://127.0.0.1:8000/get_by_filter/[category]/[index] - Filter based on selected category</p>
+                    <a href="http://127.0.0.1:8000/get_by_filter/year/1">http://127.0.0.1:8000/get_by_filter/platform/0</a>
+                </li>
+                <li>
+                    <p>PUT http://127.0.0.1:8000/sort_alphabetically/[column_number]/[ascending] - Filter based on selected category</p>
+                    <a href="http://127.0.0.1:8000/sort_alphabetically/0/True">http://127.0.0.1:8000/sort_alphabetically/0/True</a>
+                </li>
+            </ul>
+        </body>
+    </html>
